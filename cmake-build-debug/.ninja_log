@@ -1,0 +1,20 @@
+# ninja log v5
+8745	12639	7369632471388783	lib/libgtest.a	62c0e5353147e557
+4	483	7369626918556353	CMakeFiles/LeetCode.dir/main.cpp.obj	f9ce72c578bde98f
+6	1560	7369628875278103	CMakeFiles/LeetCode.dir/MaximizeHappinessOfSelectedChildren_3075.cpp.obj	21dbd2a3415fd9e1
+13	1808	7369632363079115	lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	53e1b59497223069
+8	8742	7369632432198249	lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	c59c86da63d0aef3
+5	1600	7369668252746510	CMakeFiles/Google_Tests_run.dir/MaximizeHappinessOfSelectedChildren_3075.cpp.obj	39ca65d513f05b92
+12639	12714	7369632472160200	lib/libgtest_main.a	d2ff9d994cbc9ccf
+1601	6168	7369668298331478	Google_Tests_run.exe	7a16aaba9abbd7a2
+1	248	7369668966972433	build.ninja	95538356f8d1e9c0
+5	2012	7369645889428893	CMakeFiles/Google_Tests_run.dir/MaximizeHappinessOfSelectedChildren_3076.cpp.obj	c61c589d98f1fbac
+6	1757	7369650193502649	CMakeFiles/Google_Tests_run.dir/Problem_3076.cpp.obj	6ff8ab2acc4c571b
+11	2279	7369668013885068	CMakeFiles/Google_Tests_run.dir/RelativeRanks_506.cpp.obj	75aaef653f7692f1
+2	308	7369668966972433	build.ninja	95538356f8d1e9c0
+8	1914	7369668987516003	CMakeFiles/Google_Tests_run.dir/src/MaximizeHappinessOfSelectedChildren_3075.cpp.obj	e3bf8c71e66c1fec
+5	2114	7369668989503559	CMakeFiles/Google_Tests_run.dir/src/RelativeRanks_506.cpp.obj	777e145cebe1de6e
+2114	6580	7369669034117693	Google_Tests_run.exe	72b58b4d60ea4fc0
+10	1820	7369669644048113	CMakeFiles/Google_Tests_run.dir/src/MaximizeHappinessOfSelectedChildren_3075.cpp.obj	e3bf8c71e66c1fec
+5	2008	7369669645908194	CMakeFiles/Google_Tests_run.dir/src/RelativeRanks_506.cpp.obj	777e145cebe1de6e
+2008	6544	7369669691224233	Google_Tests_run.exe	72b58b4d60ea4fc0
