@@ -137,29 +137,29 @@
 #define GMOCK_INTERNAL_DECL_HAS_4_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
                                                   kind2, name2, kind3, name3) \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3
-#define GMOCK_INTERNAL_DECL_HAS_5_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_DECL_HAS_5_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4) \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4
 #define GMOCK_INTERNAL_DECL_HAS_6_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
                                                   kind2, name2, kind3, name3, \
                                                   kind4, name4, kind5, name5) \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4, kind5 name5
-#define GMOCK_INTERNAL_DECL_HAS_7_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_DECL_HAS_7_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6)                                           \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4,        \
       kind5 name5, kind6 name6
-#define GMOCK_INTERNAL_DECL_HAS_8_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_DECL_HAS_8_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6, kind7, name7)                             \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4,        \
       kind5 name5, kind6 name6, kind7 name7
-#define GMOCK_INTERNAL_DECL_HAS_9_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_DECL_HAS_9_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6, kind7, name7, kind8, name8)               \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4,        \
       kind5 name5, kind6 name6, kind7 name7, kind8 name8
-#define GMOCK_INTERNAL_DECL_HAS_10_TEMPLATE_PARAMS(                       \
+#define GMOCK_INTERNAL_DECL_HAS_10_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6, kind7, name7, kind8, name8, kind9, name9) \
   kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4,        \
@@ -175,26 +175,26 @@
 #define GMOCK_INTERNAL_LIST_HAS_4_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
                                                   kind2, name2, kind3, name3) \
   name0, name1, name2, name3
-#define GMOCK_INTERNAL_LIST_HAS_5_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_LIST_HAS_5_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4) \
   name0, name1, name2, name3, name4
 #define GMOCK_INTERNAL_LIST_HAS_6_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
                                                   kind2, name2, kind3, name3, \
                                                   kind4, name4, kind5, name5) \
   name0, name1, name2, name3, name4, name5
-#define GMOCK_INTERNAL_LIST_HAS_7_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_LIST_HAS_7_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6)                                           \
   name0, name1, name2, name3, name4, name5, name6
-#define GMOCK_INTERNAL_LIST_HAS_8_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_LIST_HAS_8_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6, kind7, name7)                             \
   name0, name1, name2, name3, name4, name5, name6, name7
-#define GMOCK_INTERNAL_LIST_HAS_9_TEMPLATE_PARAMS(                        \
+#define GMOCK_INTERNAL_LIST_HAS_9_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6, kind7, name7, kind8, name8)               \
   name0, name1, name2, name3, name4, name5, name6, name7, name8
-#define GMOCK_INTERNAL_LIST_HAS_10_TEMPLATE_PARAMS(                       \
+#define GMOCK_INTERNAL_LIST_HAS_10_TEMPLATE_PARAMS(\
     kind0, name0, kind1, name1, kind2, name2, kind3, name3, kind4, name4, \
     kind5, name5, kind6, name6, kind7, name7, kind8, name8, kind9, name9) \
   name0, name1, name2, name3, name4, name5, name6, name7, name8, name9
@@ -583,40 +583,40 @@ namespace testing {
 // the macro definition, as the warnings are generated when the macro
 // is expanded and macro expansion cannot contain #pragma.  Therefore
 // we suppress them here.
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4100)
+    GTEST_DISABLE_MSC_WARNINGS_PUSH_(4100)
 
-namespace internal {
+    namespace internal {
 
 // internal::InvokeArgument - a helper for InvokeArgument action.
 // The basic overloads are provided here for generic functors.
 // Overloads for other custom-callables are provided in the
 // internal/custom/gmock-generated-actions.h header.
-template <typename F, typename... Args>
-auto InvokeArgument(F &&f,
-                    Args... args) -> decltype(std::forward<F>(f)(args...)) {
-  return std::forward<F>(f)(args...);
-}
+        template<typename F, typename... Args>
+        auto InvokeArgument(F &&f,
+                            Args... args) -> decltype(std::forward<F>(f)(args...)) {
+            return std::forward<F>(f)(args...);
+        }
 
-template <std::size_t index, typename... Params>
-struct InvokeArgumentAction {
-  template <typename... Args,
-            typename = typename std::enable_if<(index < sizeof...(Args))>::type>
-  auto operator()(Args &&...args) const -> decltype(internal::InvokeArgument(
-      std::get<index>(std::forward_as_tuple(std::forward<Args>(args)...)),
-      std::declval<const Params &>()...)) {
-    internal::FlatTuple<Args &&...> args_tuple(FlatTupleConstructTag{},
-                                               std::forward<Args>(args)...);
-    return params.Apply([&](const Params &...unpacked_params) {
-      auto &&callable = std::move(args_tuple.template Get<index>());
-      return internal::InvokeArgument(
-          std::forward<decltype(callable)>(callable), unpacked_params...);
-    });
-  }
+        template<std::size_t index, typename... Params>
+        struct InvokeArgumentAction {
+            template<typename... Args,
+                    typename = typename std::enable_if<(index < sizeof...(Args))>::type>
+            auto operator()(Args &&...args) const -> decltype(internal::InvokeArgument(
+                    std::get<index>(std::forward_as_tuple(std::forward<Args>(args)...)),
+                    std::declval<const Params &>()...)) {
+                internal::FlatTuple<Args &&...> args_tuple(FlatTupleConstructTag{},
+                                                           std::forward<Args>(args)...);
+                return params.Apply([&](const Params &...unpacked_params) {
+                    auto &&callable = std::move(args_tuple.template Get<index>());
+                    return internal::InvokeArgument(
+                            std::forward<decltype(callable)>(callable), unpacked_params...);
+                });
+            }
 
-  internal::FlatTuple<Params...> params;
-};
+            internal::FlatTuple<Params...> params;
+        };
 
-}  // namespace internal
+    }  // namespace internal
 
 // The InvokeArgument<N>(a1, a2, ..., a_k) action invokes the N-th
 // (0-based) argument, which must be a k-ary callable, of the mock
@@ -645,14 +645,14 @@ struct InvokeArgumentAction {
 //   to the callable.  This makes it easy for a user to define an
 //   InvokeArgument action from temporary values and have it performed
 //   later.
-template <std::size_t index, typename... Params>
-internal::InvokeArgumentAction<index, typename std::decay<Params>::type...>
-InvokeArgument(Params &&...params) {
-  return {internal::FlatTuple<typename std::decay<Params>::type...>(
-      internal::FlatTupleConstructTag{}, std::forward<Params>(params)...)};
-}
+    template<std::size_t index, typename... Params>
+    internal::InvokeArgumentAction<index, typename std::decay<Params>::type...>
+    InvokeArgument(Params &&...params) {
+        return {internal::FlatTuple<typename std::decay<Params>::type...>(
+                internal::FlatTupleConstructTag{}, std::forward<Params>(params)...)};
+    }
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  // 4100
+    GTEST_DISABLE_MSC_WARNINGS_POP_()  // 4100
 
 }  // namespace testing
 
