@@ -132,6 +132,13 @@ build CMakeFiles/Google_Tests_run.dir/src/K-thSmallestPrimeFraction_786.cpp.obj:
   OBJECT_DIR = CMakeFiles\Google_Tests_run.dir
   OBJECT_FILE_DIR = CMakeFiles\Google_Tests_run.dir\src
 
+build CMakeFiles/Google_Tests_run.dir/src/MinimumCostToHireKWorkers_857.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/DELL/Desktop/LeetCode/src/MinimumCostToHireKWorkers_857.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = CMakeFiles\Google_Tests_run.dir\src\MinimumCostToHireKWorkers_857.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/DELL/Desktop/LeetCode/lib/googletest/include -isystem C:/Users/DELL/Desktop/LeetCode/lib/googletest
+  OBJECT_DIR = CMakeFiles\Google_Tests_run.dir
+  OBJECT_FILE_DIR = CMakeFiles\Google_Tests_run.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Google_Tests_run
@@ -140,7 +147,7 @@ build CMakeFiles/Google_Tests_run.dir/src/K-thSmallestPrimeFraction_786.cpp.obj:
 #############################################
 # Link the executable Google_Tests_run.exe
 
-build Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug CMakeFiles/Google_Tests_run.dir/src/MaximizeHappinessOfSelectedChildren_3075.cpp.obj CMakeFiles/Google_Tests_run.dir/src/RelativeRanks_506.cpp.obj CMakeFiles/Google_Tests_run.dir/src/ValidWord_3136.cpp.obj CMakeFiles/Google_Tests_run.dir/src/K-thSmallestPrimeFraction_786.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug CMakeFiles/Google_Tests_run.dir/src/MaximizeHappinessOfSelectedChildren_3075.cpp.obj CMakeFiles/Google_Tests_run.dir/src/RelativeRanks_506.cpp.obj CMakeFiles/Google_Tests_run.dir/src/ValidWord_3136.cpp.obj CMakeFiles/Google_Tests_run.dir/src/K-thSmallestPrimeFraction_786.cpp.obj CMakeFiles/Google_Tests_run.dir/src/MinimumCostToHireKWorkers_857.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Google_Tests_run.dir
