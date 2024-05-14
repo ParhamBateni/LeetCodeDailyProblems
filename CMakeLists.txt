@@ -16,7 +16,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/K-thSmallestPrimeFraction_786.cpp
         src/MinimumCostToHireKWorkers_857.cpp
         src/LargestLocalValuesInMatrix_2373.cpp
-        src/ScoreAfterFlippingMatrix_861.cpp)
+        src/ScoreAfterFlippingMatrix_861.cpp
+        src/PathWithMaximumGold_1219.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
