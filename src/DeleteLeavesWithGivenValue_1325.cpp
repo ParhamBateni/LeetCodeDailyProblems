@@ -1,19 +1,7 @@
 /*
-You are given the root of a full binary tree with the following properties:
+Given a binary tree root and an integer target, delete all the leaf nodes with value target.
 
-    Leaf nodes have either the value 0 or 1, where 0 represents False and 1 represents True.
-    Non-leaf nodes have either the value 2 or 3, where 2 represents the boolean OR and 3 represents the boolean AND.
-
-The evaluation of a node is as follows:
-
-    If the node is a leaf node, the evaluation is the value of the node, i.e. True or False.
-    Otherwise, evaluate the node's two children and apply the boolean operation of its value with the children's evaluations.
-
-Return the boolean result of evaluating the root node.
-
-A full binary tree is a binary tree where each node has either 0 or 2 children.
-
-A leaf node is a node that has zero children.*/
+Note that once you delete a leaf node with value target, if its parent node becomes a leaf node and has the value target, it should also be deleted (you need to continue doing that until you cannot).*/
 
 #include "../utils.h"
 #include "gtest/gtest.h"
@@ -30,31 +18,48 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-class Solution2331 : public ::testing::Test {
+class Solution1325 : public ::testing::Test {
 public:
-    static bool evaluateTree(TreeNode *root) {
-        if (root->val == 0)
-            return false;
-        else if (root->val == 1)
-            return true;
-        else if (root->val == 2)
-            return evaluateTree(root->left) || evaluateTree(root->right);
-        else
-            return evaluateTree(root->left) && evaluateTree(root->right);
+    static TreeNode* removeLeafNodes(TreeNode* root, int target) {
+        if (root == NULL) return NULL;
+        root->left = removeLeafNodes(root->left, target);
+        root->right = removeLeafNodes(root->right, target);
+        if (root->val == target && root->right == NULL && root->left == NULL) return NULL;
+        return root;
     }
 };
 
 
-TEST(Solution2331, T1) {
-    TreeNode t1 = TreeNode(1);
-    TreeNode t2 = TreeNode(0);
+TEST(Solution1325, T1) {
+    TreeNode t1 = TreeNode(2);
+    TreeNode t2 = TreeNode(4);
     TreeNode t3 = TreeNode(3, &t1, &t2);
-    TreeNode t4 = TreeNode(1);
-    TreeNode t5 = TreeNode(2, &t4, &t3);
-    ASSERT_TRUE(Solution2331::evaluateTree(&t5));
+    TreeNode t4 = TreeNode(2);
+    TreeNode t5 = TreeNode(2, &t4, nullptr);
+    TreeNode t6 = TreeNode(2,&t5,nullptr);
+    TreeNode t7 = TreeNode(1,&t6,&t3);
+    TreeNode* res = Solution1325::removeLeafNodes(&t7,2);
+    ASSERT_EQ(res->val,1);
+    ASSERT_EQ(res->right->val,3);
+    ASSERT_EQ(res->right->right->val,4);
 }
 
-TEST(Solution2331, T2) {
-    TreeNode t1 = TreeNode(0);
-    ASSERT_FALSE(Solution2331::evaluateTree(&t1));
+TEST(Solution1325, T2) {
+    TreeNode t1 = TreeNode(3);
+    TreeNode t2 = TreeNode(2);
+    TreeNode t3 = TreeNode(3, &t1, &t2);
+    TreeNode t4 = TreeNode(3);
+    TreeNode t5 = TreeNode(1, &t3, &t4);
+    TreeNode* res = Solution1325::removeLeafNodes(&t5,3);
+    ASSERT_EQ(res->val,1);
+    ASSERT_EQ(res->left->val,3);
+    ASSERT_EQ(res->left->right->val,2);
+}
+TEST(Solution1325, T3) {
+    TreeNode t1 = TreeNode(2);
+    TreeNode t2 = TreeNode(2,&t1, nullptr);
+    TreeNode t3 = TreeNode(2, &t2, nullptr);
+    TreeNode t4 = TreeNode(1,&t3,nullptr);
+    TreeNode* res = Solution1325::removeLeafNodes(&t4,2);
+    ASSERT_EQ(res->val,1);
 }
