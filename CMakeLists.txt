@@ -20,7 +20,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/PathWithMaximumGold_1219.cpp
         src/EvaluateBooleanBinaryTree_2331.cpp
         src/DeleteLeavesWithGivenValue_1325.cpp
-        src/DistributeCoinsInBinaryTree_979.cpp)
+        src/DistributeCoinsInBinaryTree_979.cpp
+        src/FindMaximumSumOfNodeValues_3068.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
