@@ -3,9 +3,7 @@ project(LeetCode)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(LeetCode
-        src/MaximizeHappinessOfSelectedChildren_3075.cpp src/RelativeRanks_506.cpp
-        src/K-thSmallestPrimeFraction_786.cpp
-        src/ValidWord_3136.cpp)
+                src/PalindromePartitioning_131.cpp)
 
 #project(Google_tests)
 add_subdirectory(lib)
@@ -23,7 +21,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/DistributeCoinsInBinaryTree_979.cpp
         src/FindMaximumSumOfNodeValues_3068.cpp
         src/SumOfAllSubsetXORTotals_1863.cpp
-        src/Subsets_78.cpp)
+        src/Subsets_78.cpp
+        src/PalindromePartitioning_131.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
