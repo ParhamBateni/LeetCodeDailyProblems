@@ -22,7 +22,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/FindMaximumSumOfNodeValues_3068.cpp
         src/SumOfAllSubsetXORTotals_1863.cpp
         src/Subsets_78.cpp
-        src/PalindromePartitioning_131.cpp)
+        src/PalindromePartitioning_131.cpp
+        src/NumberOfBeautifulSubsets_2597.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
