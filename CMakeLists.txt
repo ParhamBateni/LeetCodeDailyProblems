@@ -24,7 +24,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/Subsets_78.cpp
         src/PalindromePartitioning_131.cpp
         src/NumberOfBeautifulSubsets_2597.cpp
-        src/MaximumScoreWordsFormedByLetters_1255.cpp)
+        src/MaximumScoreWordsFormedByLetters_1255.cpp
+        src/WordBreakII_140.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
