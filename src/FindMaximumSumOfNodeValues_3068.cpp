@@ -12,6 +12,7 @@ Return the maximum possible sum of the values Alice can achieve by performing th
 
 #include "../utils.h"
 #include "gtest/gtest.h"
+
 class Solution3068 : public ::testing::Test {
 public:
     static long long maximumValueSum(vector<int> &nums, int k, vector<vector<int>> &edges) {
@@ -29,21 +30,22 @@ public:
 
 
 TEST(Solution3068, T1) {
-    vector<int> nums{1,2,1};
+    vector<int> nums{1, 2, 1};
     int k = 3;
-    vector<vector<int>> edges{vector{0,1},vector{0,2}};
-    ASSERT_EQ(6,Solution3068::maximumValueSum(nums,k,edges));
+    vector<vector<int>> edges{vector{0, 1}, vector{0, 2}};
+    ASSERT_EQ(6, Solution3068::maximumValueSum(nums, k, edges));
 }
 
 TEST(Solution3068, T2) {
-    vector<int> nums{2,3};
+    vector<int> nums{2, 3};
     int k = 7;
-    vector<vector<int>> edges{vector{0,1}};
-    ASSERT_EQ(9,Solution3068::maximumValueSum(nums,k,edges));
+    vector<vector<int>> edges{vector{0, 1}};
+    ASSERT_EQ(9, Solution3068::maximumValueSum(nums, k, edges));
 }
+
 TEST(Solution3068, T3) {
-    vector<int> nums{7,7,7,7,7,7};
+    vector<int> nums{7, 7, 7, 7, 7, 7};
     int k = 3;
-    vector<vector<int>> edges{vector{0,1},vector{0,2},vector{0,3},vector{0,4},vector{0,5}};
-    ASSERT_EQ(42. ,Solution3068::maximumValueSum(nums,k,edges));
+    vector<vector<int>> edges{vector{0, 1}, vector{0, 2}, vector{0, 3}, vector{0, 4}, vector{0, 5}};
+    ASSERT_EQ(42., Solution3068::maximumValueSum(nums, k, edges));
 }

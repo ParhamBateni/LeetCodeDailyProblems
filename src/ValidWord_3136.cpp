@@ -9,31 +9,34 @@ Return the maximum sum of the happiness values of the selected children you can 
  */
 #include "../utils.h"
 #include "gtest/gtest.h"
-class Solution3136:public::testing::Test{
+
+class Solution3136 : public ::testing::Test {
 public:
     static bool isValid(string word) {
-        if (word.size()<3) return false;
-        bool c1,c2;
+        if (word.size() < 3) return false;
+        bool c1, c2;
         c1 = false;
         c2 = false;
-        set<char> vowels = set<char>{'a','A','e','E','i','I','o','O','u','U'};
-        for (char c: word){
-            if (!(c>=48 && c<=57 || c>=65 && c<=90 || c>=97 && c<=122)){
+        set<char> vowels = set<char>{'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
+        for (char c: word) {
+            if (!(c >= 48 && c <= 57 || c >= 65 && c <= 90 || c >= 97 && c <= 122)) {
                 return false;
             }
-            if (std::binary_search(vowels.begin(), vowels.end(),c)) c1 = true;
-            else if(c>=65) c2 = true;
+            if (std::binary_search(vowels.begin(), vowels.end(), c)) c1 = true;
+            else if (c >= 65) c2 = true;
         }
-        return c1&&c2;
+        return c1 && c2;
     }
 };
 
-TEST(Solution3136,T1){
+TEST(Solution3136, T1) {
     ASSERT_TRUE(Solution3136::isValid("234Adas"));
 }
-TEST(Solution3136,T2){
+
+TEST(Solution3136, T2) {
     ASSERT_FALSE(Solution3136::isValid("b3"));
 }
-TEST(Solution3136,T3){
+
+TEST(Solution3136, T3) {
     ASSERT_FALSE(Solution3136::isValid("a3$e"));
 }

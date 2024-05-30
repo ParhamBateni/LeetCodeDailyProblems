@@ -10,15 +10,15 @@ Return x if the array is special, otherwise, return -1. It can be proven that if
 
 class Solution1608 : public ::testing::Test {
 public:
-    static int specialArray(vector<int>& nums) {
+    static int specialArray(vector<int> &nums) {
         int n = nums.size();
         int occ[1001] = {0};
-        for (int n:nums){
+        for (int n: nums) {
             occ[n]++;
         }
-        for (int i=999;i>=0;i--){
-            occ[i] +=occ[i+1];
-            if (occ[i]==i) return i;
+        for (int i = 999; i >= 0; i--) {
+            occ[i] += occ[i + 1];
+            if (occ[i] == i) return i;
         }
         return -1;
     }
@@ -26,15 +26,16 @@ public:
 
 
 TEST(Solution1608, T1) {
-    vector<int>v{0,0};
+    vector<int> v{0, 0};
     ASSERT_EQ(-1, Solution1608::specialArray(v));
 }
 
 TEST(Solution1608, T2) {
-    vector<int>v{3,5};
+    vector<int> v{3, 5};
     ASSERT_EQ(2, Solution1608::specialArray(v));
 }
+
 TEST(Solution1608, T3) {
-    vector<int>v{0,4,3,0,4};
+    vector<int> v{0, 4, 3, 0, 4};
     ASSERT_EQ(3, Solution1608::specialArray(v));
 }

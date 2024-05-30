@@ -9,7 +9,8 @@ It is guaranteed that you can always reach one for all test cases.
  */
 #include "../utils.h"
 #include "gtest/gtest.h"
-class Solution1404:public::testing::Test{
+
+class Solution1404 : public ::testing::Test {
 public:
     static int numSteps(string s) {
         int cnt = 0, carry = 0;
@@ -30,15 +31,17 @@ public:
     }
 };
 
-TEST(Solution1404,T1){
+TEST(Solution1404, T1) {
     string s = "1101";
-    ASSERT_EQ(6,Solution1404::numSteps(s));
+    ASSERT_EQ(6, Solution1404::numSteps(s));
 }
-TEST(Solution1404,T2){
+
+TEST(Solution1404, T2) {
     string s = "10";
-    ASSERT_EQ(1,Solution1404::numSteps(s));
+    ASSERT_EQ(1, Solution1404::numSteps(s));
 }
-TEST(Solution1404,T3){
+
+TEST(Solution1404, T3) {
     string s = "1";
-    ASSERT_EQ(0,Solution1404::numSteps(s));
+    ASSERT_EQ(0, Solution1404::numSteps(s));
 }

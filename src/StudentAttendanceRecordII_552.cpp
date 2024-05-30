@@ -14,7 +14,8 @@ Given an integer n, return the number of possible attendance records of length n
  */
 #include "../utils.h"
 #include "gtest/gtest.h"
-class Solution552:public::testing::Test{
+
+class Solution552 : public ::testing::Test {
 public:
     static int checkRecord(int n) {
         int mem[2][2][3];
@@ -48,12 +49,14 @@ public:
     }
 };
 
-TEST(Solution552,T1){
-    ASSERT_EQ(8,Solution552::checkRecord(2));
+TEST(Solution552, T1) {
+    ASSERT_EQ(8, Solution552::checkRecord(2));
 }
-TEST(Solution552,T2){
-    ASSERT_EQ(3,Solution552::checkRecord(1));
+
+TEST(Solution552, T2) {
+    ASSERT_EQ(3, Solution552::checkRecord(1));
 }
-TEST(Solution552,T3){
-    ASSERT_EQ(183236316,Solution552::checkRecord(10101));
+
+TEST(Solution552, T3) {
+    ASSERT_EQ(183236316, Solution552::checkRecord(10101));
 }

@@ -12,34 +12,36 @@ Return an array answer of size n where answer[i] is the rank of the ith athlete.
  */
 #include "../utils.h"
 #include "gtest/gtest.h"
-class Solution506:public::testing::Test{
+
+class Solution506 : public ::testing::Test {
 public:
-    static vector<string> findRelativeRanks(vector<int>& score) {
+    static vector<string> findRelativeRanks(vector<int> &score) {
         vector<string> s;
         vector<int> cpy = score;
-        sort(cpy.begin(),cpy.end(),greater<int>());
-        map<int,int> mp;
-        int cnt=0;
-        for (int num:cpy){
-            mp[num]=cnt++;
+        sort(cpy.begin(), cpy.end(), greater<int>());
+        map<int, int> mp;
+        int cnt = 0;
+        for (int num: cpy) {
+            mp[num] = cnt++;
         }
-        for (int i=0;i<score.size();i++){
-            if (mp[score[i]]==0)s.push_back("Gold Medal");
-            else if (mp[score[i]]==1) s.push_back("Silver Medal");
-            else if (mp[score[i]]==2) s.push_back("Bronze Medal");
-            else s.push_back(to_string(mp[score[i]]+1));
+        for (int i = 0; i < score.size(); i++) {
+            if (mp[score[i]] == 0)s.push_back("Gold Medal");
+            else if (mp[score[i]] == 1) s.push_back("Silver Medal");
+            else if (mp[score[i]] == 2) s.push_back("Bronze Medal");
+            else s.push_back(to_string(mp[score[i]] + 1));
         }
         return s;
     }
 };
 
-TEST(Solution506,T1){
-    vector<int> v = vector<int>{5,4,3,2,1};
-    vector<string> expected = vector<string>{"Gold Medal","Silver Medal","Bronze Medal","4","5"};
-    ASSERT_TRUE(expected==Solution506::findRelativeRanks(v));
+TEST(Solution506, T1) {
+    vector<int> v = vector<int>{5, 4, 3, 2, 1};
+    vector<string> expected = vector<string>{"Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"};
+    ASSERT_TRUE(expected == Solution506::findRelativeRanks(v));
 }
-TEST(Solution506,T2){
-    vector<int> v = vector<int>{10,3,8,9,4};
-    vector<string> expected = vector<string>{"Gold Medal","5","Bronze Medal","Silver Medal","4"};
-    ASSERT_TRUE(expected==Solution506::findRelativeRanks(v));
+
+TEST(Solution506, T2) {
+    vector<int> v = vector<int>{10, 3, 8, 9, 4};
+    vector<string> expected = vector<string>{"Gold Medal", "5", "Bronze Medal", "Silver Medal", "4"};
+    ASSERT_TRUE(expected == Solution506::findRelativeRanks(v));
 }

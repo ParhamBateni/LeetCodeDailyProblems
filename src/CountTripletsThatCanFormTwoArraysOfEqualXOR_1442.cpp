@@ -14,30 +14,32 @@ Return the number of triplets (i, j and k) Where a == b.
  */
 #include "../utils.h"
 #include "gtest/gtest.h"
-class Solution1442:public::testing::Test{
+
+class Solution1442 : public ::testing::Test {
 public:
-    static int countTriplets(vector<int>& arr) {
+    static int countTriplets(vector<int> &arr) {
         // (i,j,k) <=> xors[j-1]^xors[i-1]^xors[k]^xors[j-1] =0  <=> xors[i-1] ^ xors[k] = 0 <=> xors[i-1] = xors[k]
         int n = arr.size();
-        arr.insert(arr.begin(),0);
-        int cnt =0;
-        for (int i=1;i<=n;i++){
-            arr[i] ^= arr[i-1];
+        arr.insert(arr.begin(), 0);
+        int cnt = 0;
+        for (int i = 1; i <= n; i++) {
+            arr[i] ^= arr[i - 1];
         }
-        for (int i=0;i<n;i++){
-            for (int k=i+1;k<n;k++){
-                if (arr[i]==arr[k+1]) cnt+=k-i;
+        for (int i = 0; i < n; i++) {
+            for (int k = i + 1; k < n; k++) {
+                if (arr[i] == arr[k + 1]) cnt += k - i;
             }
         }
         return cnt;
     }
 };
 
-TEST(Solution1442,T1){
-    vector<int> v {2,3,1,6,7};
-    ASSERT_EQ(4,Solution1442::countTriplets(v));
+TEST(Solution1442, T1) {
+    vector<int> v{2, 3, 1, 6, 7};
+    ASSERT_EQ(4, Solution1442::countTriplets(v));
 }
-TEST(Solution1442,T2){
-    vector<int> v {1,1,1,1,1};
-    ASSERT_EQ(10,Solution1442::countTriplets(v));
+
+TEST(Solution1442, T2) {
+    vector<int> v{1, 1, 1, 1, 1};
+    ASSERT_EQ(10, Solution1442::countTriplets(v));
 }

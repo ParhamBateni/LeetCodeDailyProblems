@@ -6,6 +6,7 @@ Given a string s, partition s such that every substring of the partition is a pa
 #include "gtest/gtest.h"
 
 vector<vector<string>> res;
+
 class Solution131 : public ::testing::Test {
 public:
     static bool isPalindrome(string s) {
@@ -18,7 +19,7 @@ public:
     }
 
     static vector<vector<string>> partition(string s, int start = 0, vector<string> cur = {}) {
-        res={};
+        res = {};
         explore(s);
         return res;
     }
@@ -41,9 +42,11 @@ public:
 TEST(Solution131, T1) {
     ASSERT_EQ(2, Solution131::partition("aab").size());
 }
+
 TEST(Solution131, T2) {
     ASSERT_EQ(1, Solution131::partition("a").size());
 }
+
 TEST(Solution131, T3) {
     ASSERT_EQ(2, Solution131::partition("cdd").size());
 }

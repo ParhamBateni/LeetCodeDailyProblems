@@ -32,13 +32,14 @@ TEST(Solution140, T1) {
 
 TEST(Solution140, T2) {
     string s = "pineapplepenapple";
-    vector<string> wordDict{"apple","pen","applepen","pine","pineapple"};
-    vector<string> expected{"pine apple pen apple","pine applepen apple","pineapple pen apple"};
+    vector<string> wordDict{"apple", "pen", "applepen", "pine", "pineapple"};
+    vector<string> expected{"pine apple pen apple", "pine applepen apple", "pineapple pen apple"};
     ASSERT_TRUE(expected == Solution140::wordBreak(s, wordDict));
 }
+
 TEST(Solution140, T3) {
     string s = "catsandog";
-    vector<string> wordDict{"cats","dog","sand","and","cat"};
+    vector<string> wordDict{"cats", "dog", "sand", "and", "cat"};
     vector<string> expected{};
     ASSERT_TRUE(expected == Solution140::wordBreak(s, wordDict));
 }

@@ -40,12 +40,12 @@ TEST(Solution979, T1) {
     TreeNode t1 = TreeNode(0);
     TreeNode t2 = TreeNode(0);
     TreeNode t3 = TreeNode(3, &t1, &t2);
-    ASSERT_EQ(2,Solution979::distributeCoins(&t3));
+    ASSERT_EQ(2, Solution979::distributeCoins(&t3));
 }
 
 TEST(Solution979, T2) {
     TreeNode t1 = TreeNode(0);
     TreeNode t2 = TreeNode(3);
     TreeNode t3 = TreeNode(0, &t1, &t2);
-    ASSERT_EQ(3,Solution979::distributeCoins(&t3));
+    ASSERT_EQ(3, Solution979::distributeCoins(&t3));
 }

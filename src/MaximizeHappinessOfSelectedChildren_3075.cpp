@@ -9,29 +9,32 @@ Return the maximum sum of the happiness values of the selected children you can 
  */
 #include "../utils.h"
 #include "gtest/gtest.h"
-class Solution3075:public::testing::Test{
+
+class Solution3075 : public ::testing::Test {
 public:
-    static long long maximumHappinessSum(vector<int>& happiness, int k) {
+    static long long maximumHappinessSum(vector<int> &happiness, int k) {
         ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-        sort(happiness.begin(),happiness.end(),greater<int>());
+        sort(happiness.begin(), happiness.end(), greater<int>());
         long long s = 0;
-        for (int i=0;i<k;i++){
-            if (happiness[i]-i<=0) break;
-            s+=happiness[i]-i;
+        for (int i = 0; i < k; i++) {
+            if (happiness[i] - i <= 0) break;
+            s += happiness[i] - i;
         }
         return s;
     }
 };
 
-TEST(Solution3075,T1){
-    vector<int> v = vector<int>{1,2,3};
-    EXPECT_EQ(4, Solution3075::maximumHappinessSum(v,2));
+TEST(Solution3075, T1) {
+    vector<int> v = vector<int>{1, 2, 3};
+    EXPECT_EQ(4, Solution3075::maximumHappinessSum(v, 2));
 }
-TEST(Solution3075,T2){
-    vector<int> v = vector<int>{1,1,1};
-    EXPECT_EQ(1, Solution3075::maximumHappinessSum(v,2));
+
+TEST(Solution3075, T2) {
+    vector<int> v = vector<int>{1, 1, 1};
+    EXPECT_EQ(1, Solution3075::maximumHappinessSum(v, 2));
 }
-TEST(Solution3075,T3){
-    vector<int> v = vector<int>{2,3,4,5};
-    EXPECT_EQ(5, Solution3075::maximumHappinessSum(v,1));
+
+TEST(Solution3075, T3) {
+    vector<int> v = vector<int>{2, 3, 4, 5};
+    EXPECT_EQ(5, Solution3075::maximumHappinessSum(v, 1));
 }
