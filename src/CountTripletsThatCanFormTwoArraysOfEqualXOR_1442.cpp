@@ -34,7 +34,7 @@ public:
 };
 
 TEST(Solution1442,T1){
-    vector<int> v {2,3,6,1,7};
+    vector<int> v {2,3,1,6,7};
     ASSERT_EQ(4,Solution1442::countTriplets(v));
 }
 TEST(Solution1442,T2){
