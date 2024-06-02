@@ -32,7 +32,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/NumberOfStepsToReduceANumberInBinaryRepresentationToOne_1404.cpp
         src/CountTripletsThatCanFormTwoArraysOfEqualXOR_1442.cpp
         src/SingleNumberIII_260.cpp
-        src/ScoreOfAString_3110.cpp)
+        src/ScoreOfAString_3110.cpp
+        src/ReverseString_344.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
