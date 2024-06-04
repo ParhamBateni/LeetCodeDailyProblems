@@ -10,7 +10,7 @@ Letters are case sensitive, for example, "Aa" is not considered a palindrome. */
 class Solution409 : public ::testing::Test {
 public:
     static int longestPalindrome(string s) {
-        int counts[52];
+        int counts[52]={0};
         int cnt= 0;
         for (char c: s){
             if (c>='a') counts[c-'a'+26]+=1;
