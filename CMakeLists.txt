@@ -35,7 +35,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/ScoreOfAString_3110.cpp
         src/ReverseString_344.cpp
         src/AppendCharactersToStringToMakeSubsequence_2486.cpp
-        src/LongestPalindrome_409.cpp)
+        src/LongestPalindrome_409.cpp
+        src/FindCommonCharacters_1002.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
