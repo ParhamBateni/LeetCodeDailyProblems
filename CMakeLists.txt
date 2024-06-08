@@ -38,7 +38,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/LongestPalindrome_409.cpp
         src/FindCommonCharacters_1002.cpp
         src/HandOfStraights_846.cpp
-        src/ReplaceWords_648.cpp)
+        src/ReplaceWords_648.cpp
+        src/ContinuousSubarraySum_523.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
