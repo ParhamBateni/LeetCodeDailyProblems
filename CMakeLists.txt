@@ -41,7 +41,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/ReplaceWords_648.cpp
         src/ContinuousSubarraySum_523.cpp
         src/SubarraySumsDivisibleByK_974.cpp
-        src/HeightChecker_1051.cpp)
+        src/HeightChecker_1051.cpp
+        src/RelativeSortArray_1122.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
