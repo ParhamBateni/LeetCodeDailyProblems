@@ -6,5 +6,6 @@
 #include <vector>
 #include <set>
 #include <queue>
+#include <math.h>
 using namespace std;
 #endif //LEETCODE_UTILS_H
