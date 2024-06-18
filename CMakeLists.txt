@@ -48,7 +48,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/MinimumIncrementToMakeArrayUnique_945.cpp
         src/IPO_502.cpp
         src/PatchingArray_330.cpp
-        src/SumOfSquareNumbers_633.cpp)
+        src/SumOfSquareNumbers_633.cpp
+        src/MostProfitAssigningWork_826.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
