@@ -51,7 +51,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/SumOfSquareNumbers_633.cpp
         src/MostProfitAssigningWork_826.cpp
         src/MinimumNumberOfDaysToMakemBouquets_1482.cpp
-        src/MagneticForceBetweenTwoBalls_1552.cpp)
+        src/MagneticForceBetweenTwoBalls_1552.cpp
+        src/GrumpyBookstoreOwner_1052.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
