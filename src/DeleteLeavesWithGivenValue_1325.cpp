@@ -6,18 +6,6 @@ Note that once you delete a leaf node with value target, if its parent node beco
 #include "../utils.h"
 #include "gtest/gtest.h"
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
-
 class Solution1325 : public ::testing::Test {
 public:
     static TreeNode *removeLeafNodes(TreeNode *root, int target) {

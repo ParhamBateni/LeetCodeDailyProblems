@@ -8,18 +8,6 @@ Return the minimum number of moves required to make every node have exactly one 
 #include "../utils.h"
 #include "gtest/gtest.h"
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
-
 class Solution979 : public ::testing::Test {
 public:
     static int distributeCoins(TreeNode *root, TreeNode *parent = NULL) {
