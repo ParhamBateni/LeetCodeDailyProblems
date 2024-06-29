@@ -58,7 +58,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/MinimumNumberOfKConsecutiveBitFlips_995.cpp
         src/BinarySearchTreeToGreaterSumTree_1038.cpp
         src/BalanceBinarySearchTree_1382.cpp
-        src/FindCenterOfStarGraph_1791.cpp)
+        src/FindCenterOfStarGraph_1791.cpp
+        src/AllAncestorsOfNodeInDirectedAcyclicGraph_2192.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 

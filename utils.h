@@ -7,6 +7,7 @@
 #include <set>
 #include <queue>
 #include <math.h>
+#include "stack"
 using namespace std;
 #endif //LEETCODE_UTILS_H
 
