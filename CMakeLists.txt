@@ -59,7 +59,13 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/BinarySearchTreeToGreaterSumTree_1038.cpp
         src/BalanceBinarySearchTree_1382.cpp
         src/FindCenterOfStarGraph_1791.cpp
-        src/AllAncestorsOfNodeInDirectedAcyclicGraph_2192.cpp)
+        src/AllAncestorsOfNodeInDirectedAcyclicGraph_2192.cpp
+        src/RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable_1579.cpp
+        src/ThreeConsecutiveOdds_1550.cpp
+        src/IntersectionOfTwoArraysII_350.cpp
+        src/MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves_1509.cpp
+        src/MergeNodesInBetweenZeros_2181.cpp
+        src/FindMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_2058.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
