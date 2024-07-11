@@ -65,7 +65,13 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/IntersectionOfTwoArraysII_350.cpp
         src/MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves_1509.cpp
         src/MergeNodesInBetweenZeros_2181.cpp
-        src/FindMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_2058.cpp)
+        src/FindMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_2058.cpp
+        src/PassThePillow_2582.cpp
+        src/WaterBottles_1518.cpp
+        src/FindTheWinnerOfTheCircularGame_1823.cpp
+        src/AverageWaitingTime_1701.cpp
+        src/CrawlerLogFolder_1598.cpp
+        src/ReverseSubstringsBetweenEachPairOfParentheses_1190.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
