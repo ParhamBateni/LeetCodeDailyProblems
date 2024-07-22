@@ -71,7 +71,18 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/FindTheWinnerOfTheCircularGame_1823.cpp
         src/AverageWaitingTime_1701.cpp
         src/CrawlerLogFolder_1598.cpp
-        src/ReverseSubstringsBetweenEachPairOfParentheses_1190.cpp)
+        src/ReverseSubstringsBetweenEachPairOfParentheses_1190.cpp
+        src/MaximumScoreFromRemovingSubstrings_1717.cpp
+        src/RobotCollisions_2751.cpp
+        src/NumberOfAtoms_726.cpp
+        src/CreateBinaryTreeFromDescriptions_2196.cpp
+        src/StepByStepDirectionsFromBinaryTreeNodeToAnother_2096.cpp
+        src/DeleteNodesAndReturnForest_1110.cpp
+        src/NumberOfGoodLeafNodesPairs_1530.cpp
+        src/LuckyNumbersInMatrix_1380.cpp
+        src/FindValidMatrixGivenRowAndColumnSums_1605.cpp
+        src/BuildMatrixWithConditions_2392.cpp
+        src/SortThePeople_2418.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
