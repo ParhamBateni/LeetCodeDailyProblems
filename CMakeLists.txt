@@ -82,7 +82,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/LuckyNumbersInMatrix_1380.cpp
         src/FindValidMatrixGivenRowAndColumnSums_1605.cpp
         src/BuildMatrixWithConditions_2392.cpp
-        src/SortThePeople_2418.cpp)
+        src/SortThePeople_2418.cpp
+        src/SortArrayByIncreasingFrequency_1636.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
