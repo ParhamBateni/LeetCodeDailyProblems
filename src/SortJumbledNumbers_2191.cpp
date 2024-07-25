@@ -48,25 +48,29 @@ Constraints:
 
 class Solution2191 : public ::testing::Test {
 public:
-    static vector<int> sortJumbled(vector<int> &mapping, vector<int> &nums) {
+    static vector<int> sortJumbled(vector<int>& mapping, vector<int>& nums) {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
+        cout.tie(nullptr);
         vector<int> res;
         vector<pair<int, int>> pairs;
-        int replaced, tmp, cnt;
+        int tmp, cnt;
         string s;
         for (auto &num: nums) {
-            replaced = 0;
             tmp = num;
             cnt = 0;
+            s = "";
             while (num != 0) {
-                replaced = 10 * replaced + mapping[num % 10];
-                num /= 10;
+                cout << num << "\n";
+                s += mapping[num % 10] +'0';
+                num = num / 10;
                 cnt++;
             }
             if (tmp == 0) {
-                replaced = mapping[num];
+                s = mapping[0] + '0';
                 cnt++;
             }
-            s = to_string(replaced);
+            cout << s << "\n";
             reverse(s.begin(), s.end());
             for (int i = 0; i < s.size() - cnt; i++)
                 s += '0';
