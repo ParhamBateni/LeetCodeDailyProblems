@@ -87,7 +87,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/SortJumbledNumbers_2191.cpp
         src/SortAnArray_912.cpp
         src/FindCityWithSmallestNumberOfNeighboursAtThresholdDistance_1334.cpp
-        src/MinimumCostToConvertString_2976.cpp)
+        src/MinimumCostToConvertString_2976.cpp
+        src/SecondMinimumTimeToReachDestination_2045.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
