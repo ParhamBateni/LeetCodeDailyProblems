@@ -90,7 +90,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/MinimumCostToConvertString_2976.cpp
         src/SecondMinimumTimeToReachDestination_2045.cpp
         src/CountNumberOfTeams_1395.cpp
-        src/MinimumDeletionsToMakeStringBalanced_1653.cpp)
+        src/MinimumDeletionsToMakeStringBalanced_1653.cpp
+        src/FillingBookcaseShelves_1105.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
