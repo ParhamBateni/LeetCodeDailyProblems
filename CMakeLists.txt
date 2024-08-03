@@ -92,7 +92,9 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/CountNumberOfTeams_1395.cpp
         src/MinimumDeletionsToMakeStringBalanced_1653.cpp
         src/FillingBookcaseShelves_1105.cpp
-        src/NumberOfSeniorCitizens_2678.cpp)
+        src/NumberOfSeniorCitizens_2678.cpp
+        src/MinimumSwapsToGroupAll1sTogetherII_2134.cpp
+        src/MakeTwoArraysEqualByReversingSubarrays_1460.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
