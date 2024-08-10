@@ -100,7 +100,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/MinimumNumberOfPushesToTypeWordII_3016.cpp
         src/IntegerToEnglishWords_273.cpp
         src/SpiralMatrixIII_885.cpp
-        src/MagicSquaresInGrid_840.cpp)
+        src/MagicSquaresInGrid_840.cpp
+        src/RegionsCutBySlashes_959.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
