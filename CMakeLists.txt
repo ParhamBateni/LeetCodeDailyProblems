@@ -103,7 +103,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/MagicSquaresInGrid_840.cpp
         src/RegionsCutBySlashes_959.cpp
         src/MinimumNumberOfDaysToDisconnectIsland_1568.cpp
-        src/KthLargestElementInAStream_703.cpp)
+        src/KthLargestElementInAStream_703.cpp
+        src/CombinationSumII_40.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
