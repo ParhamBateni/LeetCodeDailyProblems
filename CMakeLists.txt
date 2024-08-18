@@ -107,7 +107,9 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/CombinationSumII_40.cpp
         src/FindKthSmallestPairDistance_719.cpp
         src/LemonadeChange_860.cpp
-        src/MaximumDistanceInArrays_624.cpp)
+        src/MaximumDistanceInArrays_624.cpp
+        src/UglyNumberII_264.cpp
+        src/MaximumNumberOfPointsWithCost_1937.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 

@@ -10,6 +10,7 @@
 #include <math.h>
 #include "stack"
 #include <numeric>
+#include <unordered_set>
 
 using namespace std;
 #endif
