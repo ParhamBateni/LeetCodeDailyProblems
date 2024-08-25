@@ -27,11 +27,35 @@ struct TreeNode {
 
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 
-    static TreeNode *vectorToTree(vector<int> l, int root_number = 1) {
-        if (root_number > l.size() || !l[root_number-1]) return nullptr;
-        TreeNode *left = vectorToTree(l, root_number * 2);
-        TreeNode *right = vectorToTree(l, root_number * 2 + 1);
-        TreeNode *root = new TreeNode(l[root_number - 1], left, right);
+    static TreeNode* vectorToTree(vector<int> l) {
+        if (l.empty() || l[0] == 0) return nullptr;  // Edge case: empty tree or root is NULL
+
+        // Create the root node
+        TreeNode* root = new TreeNode(l[0]);
+        std::queue<TreeNode*> q;
+        q.push(root);
+
+        int i = 1;  // Start from the second element in the vector
+
+        while (!q.empty() && i < l.size()) {
+            TreeNode* current = q.front();
+            q.pop();
+
+            // Process the left child
+            if (i < l.size() && l[i] != 0) {
+                current->left = new TreeNode(l[i]);
+                q.push(current->left);
+            }
+            i++;  // Move to the next element
+
+            // Process the right child
+            if (i < l.size() && l[i] != 0) {
+                current->right = new TreeNode(l[i]);
+                q.push(current->right);
+            }
+            i++;  // Move to the next element
+        }
+
         return root;
     }
 

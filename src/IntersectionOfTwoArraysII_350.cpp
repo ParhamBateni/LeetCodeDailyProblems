@@ -39,7 +39,8 @@ class Solution350 : public ::testing::Test {
 public:
     static vector<int> intersect(vector<int> &nums1, vector<int> &nums2) {
         vector<int> res;
-        int occ1[1001], occ2[1001];
+        int occ1[1001] = {0};
+        int occ2[1001] = {0};
         for (auto &num: nums1)
             occ1[num]++;
         for (auto &num: nums2)
@@ -59,8 +60,8 @@ TEST(Solution350, T1) {
 }
 
 TEST(Solution350, T2) {
-    vector<int> v1{4,9,5};
-    vector<int> v2{9,4,9,8,4};
+    vector<int> v1{4, 9, 5};
+    vector<int> v2{9, 4, 9, 8, 4};
     vector<int> expected{4, 9};
     ASSERT_TRUE(expected == Solution350::intersect(v1, v2));
 }

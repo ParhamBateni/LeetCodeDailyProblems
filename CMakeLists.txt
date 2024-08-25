@@ -109,7 +109,14 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/LemonadeChange_860.cpp
         src/MaximumDistanceInArrays_624.cpp
         src/UglyNumberII_264.cpp
-        src/MaximumNumberOfPointsWithCost_1937.cpp)
+        src/MaximumNumberOfPointsWithCost_1937.cpp
+        src/2KeysKeyboard_650.cpp
+        src/StoneGameII_1140.cpp
+        src/StrangePrinter_664.cpp
+        src/NumberComplement_476.cpp
+        src/FractionAdditionAndSubtraction_592.cpp
+        src/FindTheClosestPalindrome_564.cpp
+        src/BinaryTreePostorderTraversal_145.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
