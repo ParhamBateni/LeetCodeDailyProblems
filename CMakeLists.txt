@@ -118,7 +118,10 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/FindTheClosestPalindrome_564.cpp
         src/BinaryTreePostorderTraversal_145.cpp
         src/N-aryTreePostorderTraversal_590.cpp
-        src/PathWithMaximumProbability_1514.cpp)
+        src/PathWithMaximumProbability_1514.cpp
+        src/TwoSum_1.cpp
+        src/CountSubIslands_1905.cpp
+        src/MostStonesRemovedWithSameRowOrColumn_947.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
