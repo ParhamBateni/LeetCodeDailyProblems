@@ -121,7 +121,13 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/PathWithMaximumProbability_1514.cpp
         src/TwoSum_1.cpp
         src/CountSubIslands_1905.cpp
-        src/MostStonesRemovedWithSameRowOrColumn_947.cpp)
+        src/MostStonesRemovedWithSameRowOrColumn_947.cpp
+        src/ModifyGraphEdgeWeights_2699.cpp
+        src/Convert1DArrayInto2DArray_2022.cpp
+        src/FindTheStudentThatWillReplaceTheChalk_1894.cpp
+        src/SumOfDigitsOfStringAfterConvert_1945.cpp
+        src/WalkingRobotSimulation_874.cpp
+        src/FindMissingObservations_2028.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
