@@ -127,7 +127,10 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/FindTheStudentThatWillReplaceTheChalk_1894.cpp
         src/SumOfDigitsOfStringAfterConvert_1945.cpp
         src/WalkingRobotSimulation_874.cpp
-        src/FindMissingObservations_2028.cpp)
+        src/FindMissingObservations_2028.cpp
+        src/DeleteNodesFromLinkedListPresentInArray_3217.cpp
+        src/LinkedListInBinaryTree_1367.cpp
+        src/SplitLinkedListInParts_725.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
