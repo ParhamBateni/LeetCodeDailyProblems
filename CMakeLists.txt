@@ -130,7 +130,9 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/FindMissingObservations_2028.cpp
         src/DeleteNodesFromLinkedListPresentInArray_3217.cpp
         src/LinkedListInBinaryTree_1367.cpp
-        src/SplitLinkedListInParts_725.cpp)
+        src/SplitLinkedListInParts_725.cpp
+        src/SpiralMatrixIV_2326.cpp
+        src/InsertGreatestCommonDivisorsInLinkedList_2807.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
