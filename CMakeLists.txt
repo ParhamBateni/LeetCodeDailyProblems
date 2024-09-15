@@ -133,7 +133,11 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/SplitLinkedListInParts_725.cpp
         src/SpiralMatrixIV_2326.cpp
         src/InsertGreatestCommonDivisorsInLinkedList_2807.cpp
-        src/MinimumBitFlipsToConvertNumber_2220.cpp)
+        src/MinimumBitFlipsToConvertNumber_2220.cpp
+        src/CountTheNumberOfConsistentStrings_1684.cpp
+        src/XORQueriesOfSubarray_1310.cpp
+        src/LongestSubarrayWithMaximumBitwiseAnd_2419.cpp
+        src/FindTheLongestSubstringContainingVowelsInEvenCounts_1371.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
