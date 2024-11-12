@@ -138,7 +138,8 @@ add_executable(Google_Tests_run src/MaximizeHappinessOfSelectedChildren_3075.cpp
         src/XORQueriesOfSubarray_1310.cpp
         src/LongestSubarrayWithMaximumBitwiseAnd_2419.cpp
         src/FindTheLongestSubstringContainingVowelsInEvenCounts_1371.cpp
-        src/PrimeSubstractionOperation_2601.cpp)
+        src/PrimeSubstractionOperation_2601.cpp
+        src/MostBeautifulItemForEachQuery_2070.cpp)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 #add_subdirectory(Google_tests)
 
